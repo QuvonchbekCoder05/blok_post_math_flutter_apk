@@ -1,0 +1,54 @@
+name: math_blog
+description: Offline Math Blog System
+publish_to: "none"
+
+version: 1.0.1+5
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Holatni boshqarish
+  flutter_bloc: ^8.1.3
+  
+  # Ma'lumotlar bazasi (Isar o'rniga Hive)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Tizim yo'llari va ID-lar
+  path_provider: ^2.1.2
+  uuid: ^4.3.3
+  collection: ^1.18.0
+
+  # Matematik renderlash
+  flutter_math_fork: ^0.7.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Kod generatsiyasi (Hive uchun)
+  build_runner: ^2.4.8
+  hive_generator: ^2.0.1
+  
+  # Ikonka yaratish uchun plugin
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  # Fon rasmi manzili
+  assets:
+    - assets/bg.jpg
+    - assets/logo.png
+
+# Ikonka sozlamalari (Faqat shu qism qo'shildi)
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/logo.png"
